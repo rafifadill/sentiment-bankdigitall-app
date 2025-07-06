@@ -9,3 +9,4 @@ streamlit-aggrid
 streamlit-option-menu
 torch
 transformers
+gdown
