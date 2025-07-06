@@ -1,0 +1,11 @@
+
+streamlit
+pandas
+matplotlib
+seaborn
+plotly
+Pillow
+streamlit-aggrid
+streamlit-option-menu
+torch
+transformers
