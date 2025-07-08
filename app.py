@@ -13,7 +13,7 @@ def load_model():
 
     # Download model dari Google Drive jika belum ada
     if not os.path.exists(model_path):
-        st.info("")
+        
         gdown.download(id="10SzSH8DnYZ1Vtp_sTL5GGZMX-1iIiHEc", output=model_path, quiet=False)
 
     tokenizer = BertTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
@@ -41,7 +41,7 @@ def predict_sentiment(text):
     return id2label[pred], probs.squeeze().tolist()
 
 # UI Streamlit
-st.title("🇮🇩 Analisis Sentimen Ulasan Bank Digital")
+st.title("Analisis Sentimen Ulasan Bank Digital")
 st.write("Masukkan ulasan pengguna, dan model IndoBERT akan memprediksi sentimennya.")
 
 user_input = st.text_area("✍️ Masukkan ulasan di sini", height=150)
